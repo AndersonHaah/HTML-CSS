@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pagina de estilo.css">
+
+</head>
+<body>
+<div class="videos-container">
+    <div class="video-esquerda">
+        <h1 class="esquerda">Inserindo vídeos hospedados localmente</h1>
+        <p>Este vídeo está hospedado no meu próprio servidor</p>
+        <video poster="Imagens/limoes-capa.png" controls autoplay loop muted>
+            <source src="midia/meu-video.mp4" type="video/mp4">
+            <source src="midia/meu-video.ogg" type="video/ogg">
+            <source src="midia/meu-video.webm" type="video/webm">
+            <source src="midia/meu-video.m4v" type="video/m4v">
+            <p>Seu navegador não tem compatibilidade com reprodução de vídeo.</p>
+        </video>
+    </div>
+
+    <div class="video-direita">
+        <h1 class="direita">Inserindo vídeos em hospedagem externas</h1>
+        <p class="direita1">Este é um vídeo hospedado no YouTube</p>
+        <iframe src="https://www.youtube.com/embed/VmAi1wOeVpQ?list=PLEIKo1ue4fgE7gmb7Ho0NZy_jxgsPeqF-" 
+            title="Minecraft - Weaponsmith's House Tutorial (Villager Houses)" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+
+    <h1 class="centro">Inserindo videos do vimeo</h1>
+        <p class="centro1">Este é um video hospedado do Vimeo</p>
+            <div class="video-vimeo">
+                <iframe  src="https://player.vimeo.com/video/725733980?h=70b37988d5&color=009159&title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            </div>
+</body>
+</html>

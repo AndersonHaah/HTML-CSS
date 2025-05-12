@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Texto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .nao-semantica {
+            background-color: #ffe4e1;
+        }
+        .semantica {
+            background-color: #e6f7ff;
+        }
+        .tag {
+            font-weight: bold;
+            color: #0073e6;
+        }
+        .exemplo {
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formatação de Texto - Tabela de Tags</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Categoria</th>
+                <th>Tag</th>
+                <th>Descrição</th>
+                <th>Exemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Não Semânticas -->
+            <tr class="nao-semantica">
+                <td>Não Semântica</td>
+                <td class="tag">&lt;b&gt;</td>
+                <td>Aplica negrito ao texto.</td>
+                <td class="exemplo">O prazo final é <b>amanhã</b>.</td>
+            </tr>
+            <tr class="nao-semantica">
+                <td>Não Semântica</td>
+                <td class="tag">&lt;i&gt;</td>
+                <td>Aplica itálico ao texto.</td>
+                <td class="exemplo">Eu adoro o livro <i>Dom Quixote</i>.</td>
+            </tr>
+            <tr class="nao-semantica">
+                <td>Não Semântica</td>
+                <td class="tag">&lt;u&gt;</td>
+                <td>Sublinha o texto.</td>
+                <td class="exemplo">Por favor, <u>leia o contrato</u>.</td>
+            </tr>
+            <tr class="nao-semantica">
+                <td>Não Semântica</td>
+                <td class="tag">&lt;s&gt;</td>
+                <td>Aplica um risco ao texto.</td>
+                <td class="exemplo"><s>Preço antigo: R$ 100,00</s>. Preço atual: R$ 80,00.</td>
+            </tr>
+            <tr class="nao-semantica">
+                <td>Não Semântica</td>
+                <td class="tag">&lt;small&gt;</td>
+                <td>Reduz o tamanho do texto.</td>
+                <td class="exemplo">Termos e condições <small>aplicáveis</small>.</td>
+            </tr>
+
+            <!-- Semânticas -->
+            <tr class="semantica">
+                <td>Semântica</td>
+                <td class="tag">&lt;strong&gt;</td>
+                <td>Aplica destaque com significado semântico.</td>
+                <td class="exemplo"><strong>Atenção:</strong> Este produto contém alergênicos.</td>
+            </tr>
+            <tr class="semantica">
+                <td>Semântica</td>
+                <td class="tag">&lt;em&gt;</td>
+                <td>Aplica ênfase ao texto.</td>
+                <td class="exemplo">Eu <em>realmente</em> preciso de sua ajuda.</td>
+            </tr>
+            <tr class="semantica">
+                <td>Semântica</td>
+                <td class="tag">&lt;mark&gt;</td>
+                <td>Destaca o texto como marcado.</td>
+                <td class="exemplo">Resultado encontrado: <mark>HTML</mark>.</td>
+            </tr>
+            <tr class="semantica">
+                <td>Semântica</td>
+                <td class="tag">&lt;del&gt;</td>
+                <td>Indica texto removido.</td>
+                <td class="exemplo">O evento será no dia <del>15 de março</del>.</td>
+            </tr>
+            <tr class="semantica">
+                <td>Semântica</td>
+                <td class="tag">&lt;ins&gt;</td>
+                <td>Indica texto adicionado.</td>
+                <td class="exemplo">O evento será no dia <ins>20 de março</ins>.</td>
+            </tr>
+            <tr class="semantica">
+                <td>Semântica</td>
+                <td class="tag">&lt;code&gt;</td>
+                <td>Representa código de programação.</td>
+                <td class="exemplo">Use o comando <code>git status</code>.</td>
+            </tr>
+            <tr class="semantica">
+                <td>Semântica</td>
+                <td class="tag">&lt;abbr&gt;</td>
+                <td>Define uma abreviação.</td>
+                <td class="exemplo"><abbr title="HyperText Markup Language">HTML</abbr>.</td>
+            </tr>
+            <tr class="semantica">
+                <td>Semântica</td>
+                <td class="tag">&lt;time&gt;</td>
+                <td>Representa uma data ou hora.</td>
+                <td class="exemplo"><time datetime="2025-03-23">23 de março de 2025</time>.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

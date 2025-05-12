@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de videos</title>
+    <link rel="shortcuticon" href="Fotos/Custom-Icon-Design-Mono-Business-2-Notebook.512 copy.png">
+</head>
+<body>
+    <h1>Videos</h1>
+    <hr>
+    <p>Neste teste tentarei fazer uma tag para fazer um video rodar no meu site html</p>
+    <video src="Videos/2025-03-04 08-24-45.mp4"> Uma live minha </video>
+    <hr>
+    <p>O video não rodou, ficou estatico como uma imagem</p>
+    <p>Para resolver isso, eu preciso adicionar um controle para o video</p>
+    <video src="Videos/2025-03-04 08-24-45.mp4" controls> Uma live minha </video>
+    <hr>
+    <p>Adicionando o controle, o video rodou, mas ainda não está do jeito que eu quero</p>
+    <p>Para resolver isso, eu preciso adicionar um tamanho para o video</p>
+    <video src="Videos/2025-03-04 08-24-45.mp4" controls
+    width="640" height="360"> Uma live minha </video>
+    <hr>
+    <p>Adicionando o tamanho, o video ficou do jeito que eu queria</p>
+    <p>Agora eu vou adicionar um poster para o video</p>
+    <video src="Videos/2025-03-04 08-24-45.mp4" controls
+    width="640" height="360" poster="Fotos/954420.jpg"> Uma live minha </video>
+    <hr>
+    <p>Adicionando o poster, o video ficou do jeito que eu queria</p>
+    <p>Agora eu vou adicionar um loop para o video</p>
+    <video src="Videos/2025-03-04 08-24-45.mp4" controls
+    width="640" height="360" poster="Fotos/954420.jpg" loop> Uma live minha </video>
+    <hr>
+    <p>Adicionando o loop, o video ficou do jeito que eu queria</p>
+    <p>Agora eu vou adicionar um autoplay para o video <br></p>
+    <p>Oque faz o autoplay no video?</p>
+    <p>autoplay é um atributo booleano que indica que o vídeo deve começar a ser reproduzido automaticamente quando a página é carregada</p>
+    <p>Se o atributo estiver presente, o vídeo será reproduzido automaticamente</p>
+    <video src="Videos/2025-03-04 08-24-45.mp4" controls
+    width="640" height="360" poster="Fotos/954420.jpg" loop autoplay> Uma live minha </video>
+    <p>Porém, neste video, mesmo após a pagina ser carregada ele não inicia sozinho, qual o motivo disso?</p>
+    <p>Provavelmente o motivo é que o navegador não permite o autoplay de videos, para resolver isso, eu preciso adicionar um atributo muted</p>
+    <video src="Videos/2025-03-04 08-24-45.mp4" controls
+    width="640" height="360" poster="Fotos/954420.jpg" loop autoplay muted> Uma live minha </video>
+    <p>Adicionando o muted o video começou a dá autoplay, mas o que o muted faz?</p>
+    <p>O atributo muted é um atributo booleano que indica que o vídeo deve ser reproduzido sem som</p>
+    <p>Se o atributo estiver presente, o vídeo será reproduzido sem som</p>
+    <p>Porém, mesmo iniciando sem som, ele ainda pode ter o audio controlado?</p>
+    <p>Sim, o audio pode ser controlado, basta clicar no botão de som do video</p>
+    <p>Porém, mesmo com o audio controlado, o video ainda não está do jeito que eu quero</p>
+    <p>Para resolver isso, eu preciso adicionar um preload para o video</p>
+    <p>Oque faz o preload no video?</p>
+    <p>preload é um atributo booleano que indica que o vídeo deve ser carregado quando a página é carregada</p>
+    <p>Se o atributo estiver presente, o vídeo será carregado quando a página é carregada</p>
+    <p>Mas meu amigo, isso não vai deixar a pagina mais pesada?</p>
+    <p>Sim, vai deixar a pagina mais pesada, por isso, eu devo usar o preload com cuidado, mas vamos lá!</p>
+    <video src="Videos/2025-03-04 08-24-45.mp4" controls
+    width="640" height="360" poster="Fotos/954420.jpg" loop autoplay muted preload> Uma live minha </video>
+    <p>Todos os codigos criados aqui foram com a ajuda do copilot, muitissimo obrigado amigo!</p>
+    <p>Porém, mesmo com o preload, o video ainda não está do jeito que eu quero</p>
+    <p>Para resolver isso, eu preciso adicionar um playsinline para o video</p>
+    <p>Oque faz o playsinline no video?</p>
+    <p>playsinline é um atributo booleano que indica que o vídeo deve ser reproduzido no próprio elemento</p>
+    <p>Se o atributo estiver presente, o vídeo será reproduzido no próprio elemento</p>
+    <p>Aí eu pergunto, oque significa ele ser reproduzido no proprio elemento?</p>
+    <p>Significa que o video será reproduzido no proprio elemento, sem abrir uma nova janela ou aba</p>
+    <p>Mas geralmente os videos não são reproduzidos em outro elemento, entao por qual motivo eu adiciono isso?</p>
+    <p>Provavelmente o motivo é que o navegador não permite o video ser reproduzido no proprio elemento, para resolver isso, eu preciso adicionar um atributo playsinline</p>
+    <video src="Videos/2025-03-04 08-24-45.mp4" controls
+    width="640" height="360" poster="Fotos/954420.jpg" loop autoplay muted preload playsinline> Uma live minha </video>
+    <hr>
+    <p> No final o codigo ficou grande, porém tranquilo de entender. <br> O código ficou assim:</p>
+    <p> &lt;video src="Videos/2025-03-04 08-24-45.mp4" controls width="640" height="360" poster="Fotos/954420.jpg" loop autoplay muted preload playsinline&gt; &lt;Uma live minha /video&gt; </p>
+    <p> Agora eu vou tentar fazer um video com um link para o youtube</p>
+    <video src="https://www.youtube.com/watch?v=dIFaPSrwcKs" controls width="640" height="360">a aula do meu professor</video>
+    <p> O video não rodou, provavelmente o motivo é que o link do youtube não é um video, é um site</p>
+    <p> Para resolver isso, eu preciso adicionar um link para o video</p>
+    <iframe width="660" height="480" src="https://www.youtube.com/embed/mJvZlzeNfPc" title="Minecraft: Ultimate Underground Base (How to Build)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <p>No caso, o proprio youtube tem um codigo especifico nos seus videos, chamado de "codigo de incorporação" então é só copiá-lo, e colá-lo aqui</p>
+   <img src="Fotos/print.png" alt="print">
+   <p> E é isto, este é o meu projeto proprio 2, videos adicionados com sucesso. 🤓</p>
+
+
+  
+
+    <hr>
+</body>
+</html>
