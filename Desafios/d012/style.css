@@ -4,13 +4,95 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
+ /* INICIO DO HEADER */
+
 header {
     background-color: black;
     width: 100%;
     height: 200px;
+    align-content: center;
+}
+
+header h1{
+    color: white;
+    font-family: 'Passion One', sans-serif;
+    font-size: 4em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header p {
+    font-family: 'Sriracha', sans-serif; 
+    color: white;
+    text-align: center;
+}
+
+header a {
+    color:white;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header a:active {
+    color: white;
+}
+
+/* FIM DO HEADER */
+
+/* INICIO DO MAIN */
+
+
+section {
+    box-shadow: -1px 4px 7px rgba(0, 0, 0, 0.205);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.branco {
+    background-color: white;
+    font-family: 'Sriracha', cursive, sans-serif;
+    font-size: 1.4em;
+    max-width: 300px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+article > div {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.441);
+    max-width: 320px;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    top: 120px;
+}
+
+article > div > p {
+        font-family: 'Sriracha', cursive, sans-serif;
+        font-size: 1.4em;
+        color:white;
+        margin: 20px
 }
 
 
-body { 
-    background-color: black;
+#flores {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(imagens/background001.jpg);
+    background-size: 100% contain;
+    height: 500px;
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
 }
+
+
+
+
+
+/* FIM DO MAIN*/
