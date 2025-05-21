@@ -12,6 +12,48 @@
 </head>
 <body>
     <h1>Exemplo de formularios</h1>
-    
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected>---- ESCOLHA ----</option>
+                <optgroup label="Região Nordeste">
+                    <option value="CE">Ceara</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="MA">Maranhão</option>
+                </optgroup>
+
+
+                <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas gerais</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <optgroup label="PJ">
+                    <option value="ADM">Administrador</option>
+                    <option value="CONT">Contador</option>
+                </optgroup>
+                <optgroup label="CLT">
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="PROF">Professor</option>
+                </optgroup>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem: </label> <br>
+            <textarea name="mgs" id="imsg" cols="30" rows="10" required placeholder="Sua mensagem aqui..."></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
