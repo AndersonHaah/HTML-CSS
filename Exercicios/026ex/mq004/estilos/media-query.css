@@ -11,11 +11,8 @@ Desktops: 992px até 1279px;
 Grandes telas: acima de 1279px;
 -----------------------------------
 */
-
-@media print { /* impressão */
-    body {background-image: url(../imagens/back-print.jpg); /*desnecessario*/
-    } 
-
+/* --------------------------- impressão -------------------------- */
+@media print { 
     main {border: 2px solid black;}
     main::after { 
         content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
@@ -30,20 +27,20 @@ Grandes telas: acima de 1279px;
     main img#phone {display: none;}
     main img#print {display: block;}
 }
-
-@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablets */
+/* --------------------------- Tablets ---------------------------- */
+@media screen and (min-width: 768px) and (max-width: 992px) { 
     body {background-image: url(../imagens/back-tablet.jpg);}
     main img#tablet {display: block;}
     main img#phone {display: none;}
 }
- 
-@media screen and (min-width: 992px) and (max-width: 1279px) { /* Desktop */
+/* --------------------------- Desktop ---------------------------- */
+@media screen and (min-width: 992px) and (max-width: 1279px) { 
     body {background-image: url(../imagens/back-pc.jpg);}
     main img#phone {display: none;}
     main img#pc {display: block;}
 }
-
-@media screen and (min-width: 1279px) { /* Grandes telas */
+/* ------------------------ Grandes telas ------------------------- */
+@media screen and (min-width: 1279px) { 
     body {background-image: url(../imagens/back-tv.jpg);}
     main img#phone {display: none;}
     main img#tv {display: block;}
