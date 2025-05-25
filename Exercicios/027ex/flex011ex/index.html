@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        div.conteiner {
+            background-color: lightcoral;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+
+        div.iconteiner {
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+
+        div.econteiner {
+            background-color: lightcoral;
+            width: 50%;
+            margin: auto;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px;
+            
+            
+        }
+
+        #cxA {
+            flex-shrink: 1;
+            flex-grow: 0;            
+        }
+
+        #cxB {
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        #cxC {
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+        
+        #icxA {
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        #icxB {
+            flex-shrink: 1;
+            flex-grow: 3;
+        }
+
+        #icxC {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        #ecxA {
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        #ecxB {
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+
+        #ecxC {
+            flex-shrink: 2;
+            flex-grow: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+    </div>
+    <div class="iconteiner">
+        <div class="item" id="icxA">A</div>
+        <div class="item" id="icxB">B</div>
+        <div class="item" id="icxC">C</div>
+    </div>
+    <div class="econteiner">
+        <div class="item" id="ecxA">A</div>
+        <div class="item" id="ecxB">B</div>
+        <div class="item" id="ecxC">C</div>
+    </div>
+</body>
+</html>
